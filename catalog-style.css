@@ -1,0 +1,316 @@
+@font-face {
+    font-family: 'RussianRail G Pro';
+    src: url('fonts/RussianRail G Pro Regular_0.otf') format('otf');
+    /* font-weight: normal;
+    font-style: normal; */
+}
+@font-face {
+    font-family: 'HarreeghPoppedCy';
+    src: url('fonts/HarreeghPoppedCyrillic.ttf') format('ttf');
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+*::-webkit-scrollbar {
+    height: 1rem;
+    width: 5rem;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 5rem;
+    background-color: #000000;
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: #2c2c2c;
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: #2c2c2c;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 5rem;
+    background-color: #3BCA18;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #68ca4f;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #68ca4f;
+  }
+
+/* font-family: 'RussianRail G Pro', sans-serif;
+    font-family: "Jaro", sans-serif; 
+*/
+
+@media screen and (min-width: 690px)  {
+    body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    html {
+        font-size: calc(1vw/19.2);
+    }
+
+    /* HEADER */
+
+    .header__logo{
+        font-family: "Jaro", sans-serif;
+        font-size: 64rem;
+        margin: 0;
+        font-weight: 400;
+    }
+
+    .header{
+        margin-top: 21rem;
+        width: 1720rem;
+        display: flex;
+        color: #FFFFFF;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__nav{
+        display: flex;
+        gap: 100rem;
+    }
+
+    .header__link{
+        color: #FFFFFF;
+        text-decoration: none;
+        font-family: 'RussianRail G Pro', sans-serif;
+        font-size: 32rem;
+    }
+
+    /* HERO */
+    .hero-catalog {
+        display: flex;
+        flex-direction: row;
+        gap: 505rem;
+        margin-top: 133rem;
+    }
+
+    .pet-info{
+        display: flex;
+        flex-direction: column;
+        gap: 24rem;
+        width: 557rem;
+    }
+    .pet-info__image{
+        display: flex;
+        flex-direction: column;
+        gap: 24rem;
+        align-items: center;
+    }
+    .pet-info__dialog{
+        display: flex;
+        width: 171.5rem;
+        height: 90rem;
+        background-image: url(img/profit-bg.svg);
+        background-size: cover;
+        justify-content: center;
+        margin-left: 447rem;    
+    }
+    .pet-info__dialog-txt{
+        font-family: 'HarreeghPoppedCy';
+        font-size: 36rem;
+        font-weight: 400;
+        color: #FFFFFF;
+        margin: 22rem 0rem 0rem 0rem;
+    }
+    .pet-info__img-pet{
+        width: 524.61rem;
+        height: 487rem;
+    }
+    .pet-info__level {
+        display: flex;
+        flex-direction: column;
+        gap: 29rem;
+    }
+    .pet-info__level-top{
+        display: flex;
+        justify-content: space-between;
+        font-family: 'HarreeghPoppedCy';
+        font-size: 36rem;
+        font-weight: 400;
+        color: #FFFFFF;
+    }
+    .pet-info__level-top p{
+        margin: 0rem;
+    }
+    .pet-info__progress{
+        display: flex;
+        justify-content: space-between;
+    }
+    .pet-info__bar{
+        background-image: url(img/empty-bar.svg);
+        background-size: cover;
+        width: 64rem;
+        height: 37rem;
+    }
+    .pet-info__bar--filled{
+        background-image: url(img/filled-bar.svg);
+    }
+    /* CURRENCY */
+    .currency{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .currency__balance {
+        display: flex;
+        gap: 36rem;
+        align-items: center;
+        margin-bottom: 62rem;
+    }
+    .currency__balance-img{
+        height: 69rem;
+        width: 34rem;
+    }
+    .currency__balance-amount{
+        width: 299rem;
+        height: 79rem;
+        font-family: 'HarreeghPoppedCy';
+        font-size: 36rem;
+        font-weight: 400;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        padding-left: 22rem;
+        background-image: url(img/balance.svg);
+        background-size: cover;
+    }
+
+    /* SRANIE KARTOCHKI */
+    .currency__stats {
+        display: grid;
+        grid-template-columns: repeat(3, 150rem); 
+        gap: 55px;
+        justify-content: center;
+    }
+    .currency__stat {
+        width: 150rem;
+        height: 234rem;
+        border: 5rem solid #3BCA18;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    .currency__stat p {
+        font-family: 'RussianRail G Pro', sans-serif;
+        font-size: 32rem;
+        color: #FFFFFF;
+        margin: 0;
+    }
+    .currency__value{
+        display: flex;
+        gap: 5rem;
+        align-items: center;
+    }
+    .currency__value-diamond{
+        height: 33rem;
+        width: 16rem;
+    }
+    #currency__stat-right{
+        background-image: url(img/currency__stat_r.svg);
+        background-size: cover;
+        border: transparent;
+    }
+    #currency__stat-left {
+        background-image: url(img/currency__stat_l.svg);
+        background-size: cover;
+        border: transparent;
+    }
+
+    /* ACCESSORIES */
+    .accessories{
+        background-image: url(img/access-bg.svg);
+        background-size: cover;
+        width: 100%;
+        margin-top: 133rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1080rem;
+    }
+    .accessories__title{
+        font-family: 'HarreeghPoppedCy';
+        font-size: 64rem;
+        font-weight: 400;
+        color: #FFFFFF;
+        margin: 57rem 0rem 106rem 0rem;
+    }
+    .accessories__container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 80rem;
+        justify-content: center;
+        max-width: 1720rem;
+    }
+    .accessories__item{
+        width: 370rem;
+        height: 563rem;
+        border: 5rem solid #3BCA18;
+        box-shadow: 0rem 20rem 40rem rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(10rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .accessories__item img{
+        width: 282rem;
+        height: 282rem;
+        margin-bottom: 97rem;
+    }
+    .accessories__item-desc {
+        display: flex;
+        justify-content: space-between;
+        width: 341.11rem;
+        font-family: 'HarreeghPoppedCy';
+        font-weight: 400;
+        font-size: 36rem;
+        color: #FFFFFF;
+        margin-bottom: 20rem;
+    }
+    .accessories__item-cost{
+        display: flex;
+        align-items: center;
+        gap: 11rem;
+    }
+    .accessories__item p {
+        margin: 0;
+    }
+    .accessories__item-cost img{
+        width: 16rem;
+        height: auto;
+        margin: 0;
+    }
+    .accessories__button{
+        font-family: 'RussianRail G Pro';
+        color: #FFFFFF;
+        font-size: 36rem;
+        font-weight: 400;
+        padding: 27rem 101rem;
+        background-color: transparent;
+        border: 0rem;
+        border-top: 5rem dashed #3BCA18;
+        transition: 0.5s ease;
+    }
+    .accessories__button:hover{
+        background-color: #3cca182c;
+    }
+
+
+}

@@ -58,6 +58,7 @@ body {
 
     html {
         font-size: calc(1vw/19.2);
+        scroll-behavior: smooth;
     }
 
     /* HEADER */
@@ -99,6 +100,7 @@ body {
         width: 100%;
         flex-direction: row;
         background-image: url("img/adopt-bg.png");
+        background-size: 100%;
     }
 
     .hero__image{
@@ -141,18 +143,25 @@ body {
 
     .hero__button{
         padding: 37rem 142rem;
-        color: #FFFFFF;
-        font-family: 'RussianRail G Pro', sans-serif;
-        font-size: 32rem;
         background-color: #000000;
         font-weight: 800;
         border: #3BCA18 7rem solid;
-        letter-spacing: 12%; /*не робит ска*/
         position: relative;
         margin: 140rem 0rem 0rem 170rem;
+        transition: 0.5s ease;
     }
 
+    .hero__button:hover{
+        transform: scale(1.05); 
+    }
     
+    .hero_button-txt{
+        font-family: 'RussianRail G Pro', sans-serif;
+        letter-spacing: 12%; /*не робит ска*/
+        font-size: 32rem;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
 
     /* STEPS */
     .steps{
@@ -191,10 +200,10 @@ body {
         justify-content: center;
         background: none;
         text-align: center;
-        --d: 35px; /* глубина */
-        height: 438px;
+        --d: 35rem; /* глубина */
+        height: 438rem;
         width: 450rem;
-        padding: 10px;
+        padding: 10rem;
         aspect-ratio: 1;
         box-sizing: border-box;
         border: solid #3BCA18; /*цвет грани*/
@@ -211,6 +220,13 @@ body {
         height: 200rem;
     }
 
+    .catalog__slide{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 136rem;
+    }
+
     .steps__text{
         width: 255rem;
         color: #FFFFFF;
@@ -219,7 +235,163 @@ body {
         font-weight: 400;
     }
 
+    /* CATALOG */
+    .catalog{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 70rem;
+        margin-top: 206rem;
+    }
+
+    .catalog__slider{
+        position: relative;
+        width: 1725rem;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 458rem;
+    }
+
+    .catalog__info{
+        height: 390rem;
+        width: 370rem;
+        border-top: 5rem solid #3BCA18;
+        border-right: 5rem solid #3BCA18;
+        border-bottom: 5rem dashed #3BCA18;
+        border-left: 5rem dashed #3BCA18;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     
+    .catalog__description{
+        font-family: 'RussianRail G Pro', sans-serif;
+        font-size: 24rem;
+        color: #FFFFFF;
+        text-align: center;
+        width: 292rem;
+    }
+    
+    .catalog__pet{
+        width: 450rem;
+        height: 500rem;
+        border: 5rem solid #3BCA18;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 67rem;
+        font-family: 'HarreeghPoppedCy';
+        font-size: 48rem;
+        color: #FFFFFF;
+    }
+    .catalog__name{
+        font-weight: 400;
+        margin: 0;
+    }
+    #catalog__image-nyan{
+        margin-top: 69rem;
+        width: 289rem;
+        height: 268rem;
+    }
+    #catalog__image-yozhik{
+        margin-top: 43rem;
+        width: 315.4rem;
+        height: 300rem;
+    }
+    #catalog__image-chichilav{
+        margin-top: 52rem;
+        width: 269.37rem;
+        height: 302rem;
+    }
+
+    .catalog__stats{
+        height: 390rem;
+        width: 370rem;
+        border-top: 5rem dashed #3BCA18;
+        border-right: 5rem dashed #3BCA18;
+        border-bottom: 5rem solid #3BCA18;
+        border-left: 5rem solid #3BCA18;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 75rem;
+    }
+    .catalog__stats-top, .catalog__stats-bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 21rem;
+    } 
+
+    .catalog__arrow{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        border: 0;
+        z-index: 2;
+    }
+
+    .arrow {
+        height: 117rem;
+        width: 65rem;
+    }
+    .catalog__arrow--left {
+        left: 0rem; 
+    }
+    
+    .catalog__arrow--right {
+        right: 0rem;
+    }
+    
+
+    .catalog__stat{
+        font-family: 'RussianRail G Pro', sans-serif;
+        font-size: 24rem;
+        color: #FFFFFF;
+        margin: 0rem;
+    }
+    .catalog__bar{
+        display: flex;
+        gap: 7rem;
+    }
+    .catalog__bar-item{
+        background-image: url(img/empty-bar.svg);
+        background-size: cover;
+        width: 64rem;
+        height: 37rem;
+    }
+    .catalog__bar--filled{
+        background-image: url(img/filled-bar.svg);
+    }
+
+    .catalog__button{
+        padding: 36rem 640rem;
+        background-color: #000000;
+        border: #3BCA18 7rem solid;
+        color: #FFFFFF;
+        font-family: 'RussianRail G Pro', sans-serif;
+        font-size: 36rem;
+        font-weight: 600;
+        transition: 0.5s ease;
+    }
+    .catalog__button:hover{
+        background-color: #3cca182c;
+    }
+
+    .catalog__footer{
+        display: flex;
+        justify-content: space-between;
+        width: 1492rem;
+        margin-bottom: 95rem;
+    }
+    .catalog__footer-catalog, .catalog__footer-about {
+        width: auto;
+        height: 134rem;
+    }
 }
 
 

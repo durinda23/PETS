@@ -4,9 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="catalog-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
     <title>Catalog</title>
 </head>
 <body>
+    <header class="header">
+        <h1 class="header__logo">PETS</h1>
+        <nav class="header__nav">
+            <a href="main.html" class="header__link">ГЛАВНАЯ</a>
+            <a href="catalog.html" class="header__link">КАТАЛОГ</a>
+            <a href="about.html" class="header__link">О НАС</a>
+        </nav>
+    </header>
+    
+    <!-- Main Pet Section -->
+    <section class="hero-catalog">
+        <div class="pet-info">
+            <div class="pet-info__image">
+                <div class="pet-info__dialog">
+                    <p class="pet-info__dialog-txt">+110/h</p>
+                </div>
+                <img src="img\robo-nyanya.png" alt="robo-nyanya" class="pet-info__img-pet">
+            </div>
+            <div class="pet-info__level">
+                <div class="pet-info__level-top">
+                    <p>LEVEL</p>
+                    <p>1/8</p>
+                </div>
+                <div class="pet-info__progress">
+                    <div class="pet-info__bar pet-info__bar--filled"></div>
+                    <div class="pet-info__bar"></div>
+                    <div class="pet-info__bar"></div>
+                    <div class="pet-info__bar"></div>
+                    <div class="pet-info__bar"></div>
+                    <div class="pet-info__bar"></div>
+                    <div class="pet-info__bar"></div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Currency Section -->
+        <section class="currency">
+            <div class="currency__balance">
+                <img class="currency__balance-img" src="img/diamond.png" alt="Diamond">
+                <div class="currency__balance-amount">
+                    <p>93241</p>
+                </div>
+            </div>
+            <div class="currency__stats">
+                <div class="currency__stat">
+                    <div class="currency__value">
+                        <img class="currency__value-diamond" src="img\diamond.svg" alt="diamond">
+                        <p>10</p>
+                    </div>
+                    <p>+10/h</p>
+                    <p>speed</p>
+                </div>
+                <div class="currency__stat">
+                    <div class="currency__value">
+                        <img class="currency__value-diamond" src="img\diamond.svg" alt="diamond">
+                        <p>10</p>
+                    </div>
+                    <p>+10/h</p>
+                    <p>brain</p>
+                </div>
+                <div class="currency__stat" id="currency__stat-right">
+                    <div class="currency__value">
+                        <img class="currency__value-diamond" src="img\diamond.svg" alt="diamond">
+                        <p>10</p>
+                    </div>
+                    <p>+10/h</p>
+                    <p>power</p>
+                </div>
+                <div class="currency__stat" id="currency__stat-left">
+                    <div class="currency__value">
+                        <img class="currency__value-diamond" src="img\diamond.svg" alt="diamond">
+                        <p>10</p>
+                    </div>
+                    <p>+10%</p>
+                    <p>feed</p>
+                </div>
+                <div class="currency__stat">
+                    <div class="currency__value">
+                        <img class="currency__value-diamond" src="img\diamond.svg" alt="diamond">
+                        <p>10</p>
+                    </div>
+                    <p>+10%</p>
+                    <p>play</p>
+                </div>
+                <div class="currency__stat">
+                    <div class="currency__value">
+                        <img class="currency__value-diamond" src="img\diamond.svg" alt="diamond">
+                        <p>10</p>
+                    </div>
+                    <p>+10%</p>
+                    <p>care</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Accessories Section -->
+    <section class="accessories">
+        <h2 class="accessories__title">АКСЕССУАРЫ</h2>
+        <div class="accessories__container">
+            <div class="accessories__item">
+                <img src="img/collar.png" alt="Ошейник">
+                <div class="accessories__item-desc">
+                    <p>Ошейник</p>
+                    <div class="accessories__item-cost">
+                        <img src="img\diamond.svg" alt="diamond">
+                        <p>5000</p>
+                    </div>
+                </div>
+                <button class="accessories__button">КУПИТЬ</button>
+            </div>
+            <div class="accessories__item">
+                <img src="img/wings.png" alt="Крылья">
+                <div class="accessories__item-desc">
+                    <p>Крылья</p>
+                    <div class="accessories__item-cost">
+                        <img src="img\diamond.svg" alt="diamond">
+                        <p>10000</p>
+                    </div>
+                </div>
+                <button class="accessories__button">КУПИТЬ</button>
+            </div>
+            <div class="accessories__item">
+                <img src="img/ring.png" alt="Кольцо">
+                <div class="accessories__item-desc">
+                    <p>Кольцо</p>
+                    <div class="accessories__item-cost">
+                        <img src="img\diamond.svg" alt="diamond">
+                        <p>1000</p>
+                    </div>
+                </div>
+                <button class="accessories__button">КУПИТЬ</button>
+            </div>
+            <div class="accessories__item">
+                <img src="img/glasses.png" alt="Очки">
+                <div class="accessories__item-desc">
+                    <p>Очки</p>
+                    <div class="accessories__item-cost">
+                        <img src="img\diamond.svg" alt="diamond">
+                        <p>1000</p>
+                    </div>
+                </div>
+                <button class="accessories__button">КУПИТЬ</button>
+            </div>
+        </div>
+    </section>
     
 </body>
 </html>

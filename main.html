@@ -28,18 +28,10 @@
           <p class="hero__text">
               Добро пожаловать в мир будущего! Создай AI-компаньона, который станет твоим верным цифровым другом. Готов начать?
           </p>
-          <button class="hero__button">НАЧАТЬ</button>
+          <button class="hero__button"><a href="#catalog" class="hero_button-txt">НАЧАТЬ</a></button>
       </div>
     </section>
     
-    <!-- <div class="cube">
-      <div class="face -front">
-      <div class="face -left">
-      <div class="face -top">
-      <div class="face -bottom">
-      <div class="face -right">
-      <div class="face -back">
-    </div> -->
   
     <!-- Steps Section -->
     <section class="steps">
@@ -59,25 +51,40 @@
         </div>
       </div>
     </section>
-  
+    
     <!-- Catalog Section -->
-    <section class="catalog">
+    <section class="catalog" id="catalog">
       <div class="catalog__slider">
-          <button class="catalog__arrow catalog__arrow--left"><img src="img\left-arrow.png" alt="left"></button>
+        <button class="catalog__arrow catalog__arrow--left"><img class="arrow" src="img\left-arrow.png" alt="left"></button>
+        <button class="catalog__arrow catalog__arrow--right"><img class="arrow" src="img\right-arrow.png" alt="right"></button>
   
           <div class="catalog__slide active">
               <div class="catalog__info">
                   <p class="catalog__description">Нет сознания, работает по алгоритмам, пугающая, хозяйка</p>
               </div>
               <div class="catalog__pet">
-                  <img src="img\robo-nyanya.png" alt="Robo-nanny" class="catalog__image">
+                  <img src="img\robo-nyanya.png" alt="Robo-nanny" class="catalog__image" id="catalog__image-nyan">
                   <h3 class="catalog__name">РОБО-НЯНЯ</h3>
               </div>
               <div class="catalog__stats">
+                <div class="catalog__stats-top">
                   <p class="catalog__stat">интеллект</p>
-                  <div class="catalog__bar"><span class="catalog__bar--full"></span></div>
+                  <div class="catalog__bar">
+                    <div class="catalog__bar-item catalog__bar--filled"></div>
+                    <div class="catalog__bar-item"></div>
+                    <div class="catalog__bar-item"></div>
+                    <div class="catalog__bar-item"></div>
+                  </div>
+                </div>
+                <div class="catalog__stats-bottom">
                   <p class="catalog__stat">прожорливость</p>
-                  <div class="catalog__bar"><span class="catalog__bar--full"></span></div>
+                  <div class="catalog__bar">
+                    <div class="catalog__bar-item catalog__bar--filled"></div>
+                    <div class="catalog__bar-item catalog__bar--filled"></div>
+                    <div class="catalog__bar-item catalog__bar--filled"></div>
+                    <div class="catalog__bar-item"></div>
+                  </div>
+                </div>
               </div>
           </div>
   
@@ -86,14 +93,28 @@
                   <p class="catalog__description">Очень милое существо, пока не взять его в руки, ядовит, храпит</p>
               </div>
               <div class="catalog__pet">
-                  <img src="img\yozhik.png" alt="Ebejik" class="catalog__image">
+                  <img src="img\yozhik.png" alt="Ebejik" class="catalog__image" id="catalog__image-yozhik">
                   <h3 class="catalog__name">ЕБЁЖИК</h3>
               </div>
               <div class="catalog__stats">
+                <div class="catalog__stats-top">
                   <p class="catalog__stat">миловидность</p>
-                  <div class="catalog__bar"><span class="catalog__bar--half"></span></div>
-                  <p class="catalog__stat">колкость</p>
-                  <div class="catalog__bar"><span class="catalog__bar--full"></span></div>
+                  <div class="catalog__bar">
+                    <div class="catalog__bar-item catalog__bar--filled"></div>
+                    <div class="catalog__bar-item catalog__bar--filled"></div>
+                    <div class="catalog__bar-item catalog__bar--filled"></div>
+                    <div class="catalog__bar-item"></div>
+                  </div>
+                </div>
+                  <div class="catalog__stats-bottom">
+                    <p class="catalog__stat">колкость</p>
+                    <div class="catalog__bar">
+                      <div class="catalog__bar-item catalog__bar--filled"></div>
+                      <div class="catalog__bar-item catalog__bar--filled"></div>
+                      <div class="catalog__bar-item catalog__bar--filled"></div>
+                      <div class="catalog__bar-item catalog__bar--filled"></div>
+                    </div>
+                  </div>
               </div>
           </div>
   
@@ -102,28 +123,36 @@
                   <p class="catalog__description">Милое лицо, перепады настроения, любит внимание, типичный софтгерл</p>
               </div>
               <div class="catalog__pet">
-                  <img src="img\pet1.png" alt="Chichilav" class="catalog__image">
+                  <img src="img\pet1.png" alt="Chichilav" class="catalog__image" id="catalog__image-chichilav">
                   <h3 class="catalog__name">ЧИЧИЛАВ</h3>
               </div>
               <div class="catalog__stats">
+                <div class="catalog__stats-top">
                   <p class="catalog__stat">энергичность</p>
-                  <div class="catalog__bar"><span class="catalog__bar--half"></span></div>
+                  <div class="catalog__bar">
+                    <div class="catalog__bar-item catalog__bar--filled"></div>
+                    <div class="catalog__bar-item catalog__bar--filled"></div>
+                    <div class="catalog__bar-item catalog__bar--filled"></div>
+                    <div class="catalog__bar-item"></div>
+                  </div>
+                </div>
+                <div class="catalog__stats-bottom">
                   <p class="catalog__stat">решительность</p>
-                  <div class="catalog__bar"><span class="catalog__bar--full"></span></div>
+                  <div class="catalog__bar">
+                    <div class="catalog__bar-item catalog__bar--filled"></div>
+                    <div class="catalog__bar-item"></div>
+                    <div class="catalog__bar-item"></div>
+                    <div class="catalog__bar-item"></div>
+                  </div>
+                </div>
               </div>
           </div>
-  
-          <button class="catalog__arrow catalog__arrow--right"><img src="img\right-arrow.png" alt="right"></button>
       </div>
-  
       <button class="catalog__button">ВЫБРАТЬ</button>
-  
-    <!-- Footer Section -->
-    <footer class="">
-      <div class="">
-        <a href="catalog.html" class="">CATALOG</a>
-        <a href="about.html" class="">ABOUT US</a>
+      <div class="catalog__footer">
+        <a href="catalog.html"><img class="catalog__footer-catalog" src="img\catalog.png"></a>
+        <a href="about.html"><img class="catalog__footer-about" src="img\about.png"></a>
       </div>
-    </footer>
+    </section>
 </body>
 </html>
