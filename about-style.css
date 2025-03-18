@@ -1,12 +1,13 @@
 @font-face {
     font-family: 'RussianRail G Pro';
-    src: url('fonts/RussianRail G Pro Regular_0.otf') format('otf');
+    src: url('fonts/RussianRailGProRegular_0.otf') format('opentype');
     /* font-weight: normal;
     font-style: normal; */
 }
+
 @font-face {
     font-family: 'HarreeghPoppedCy';
-    src: url('fonts/HarreeghPoppedCyrillic.ttf') format('ttf');
+    src: url('fonts/HarreeghPoppedCyrillic.ttf') format('truetype');
 }
 body {
     margin: 0;
