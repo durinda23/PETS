@@ -131,4 +131,111 @@ body {
         height: 825rem;
         width: 825rem;
     }
+    .about-ph {
+        display: none;
+    }
+    .burger-btn {
+        display: none;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 690px) {
+    body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    html {
+        font-size: calc(1vw/3.6);
+    }
+
+    /* HEADER */
+
+    .header__logo{
+        font-family: "Jaro", sans-serif;
+        font-size: 16rem;
+        margin: 0;
+        font-weight: 400;
+    }
+
+    .header{
+        margin-top: 3rem;
+        width: 330rem;
+        display: flex;
+        color: #FFFFFF;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__nav{
+        display: none;
+    }
+
+    .burger-btn{
+        background-color: transparent;
+        border: 0rem;
+        width: 21rem;
+        height: 12rem;
+    }
+
+/* HERO */
+    .about{
+        display: none;
+    }
+    .about-ph {
+        display: flex;
+        flex-direction: column;
+        margin-top: 29rem;
+    }
+
+
+    .about__content {
+        width: 320rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 11rem;
+    }
+
+    .about__text{
+        font-family: 'RussianRail G Pro', sans-serif;
+        font-size: 12rem;
+        color: #FFFFFF;
+        margin: 0;
+    }
+
+    .about__text-bottom {
+        width: 216rem;
+        text-align: center;
+        margin-top: 30rem;
+        margin-left: 57rem;
+    }
+
+    .about__button{
+        margin-top: 34rem;
+        padding: 24.5rem 37.5rem;
+        font-family: 'RussianRail G Pro', sans-serif;
+        font-size: 14rem;
+        color: #FFFFFF;
+        font-weight: 600;
+        background-color: #000000;
+        border: #3BCA18 3rem solid;
+        transition: 0.5s ease;
+        margin-left: 60rem;
+    }
+    .about__button:hover{
+        transform: scale(1.05);
+    }
+
+    .about__image {
+        margin-left: 144rem;
+    }
+
+    .about__image, #robots{
+        height: 176rem;
+        width: 176rem;
+    }
 }
