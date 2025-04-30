@@ -83,6 +83,10 @@ body {
         gap: 100rem;
     }
 
+    .burger-btn {
+        display: none;
+    }
+
     .header__link{
         color: #FFFFFF;
         text-decoration: none;
@@ -312,5 +316,253 @@ body {
         background-color: #3cca182c;
     }
 
+}
+
+@media (min-width: 0px) and (max-width: 690px) {
+    body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    html {
+        font-size: calc(1vw/3.6);
+    }
+
+
+    .header__logo{
+        font-family: "Jaro", sans-serif;
+        font-size: 16rem;
+        margin: 0;
+        font-weight: 400;
+    }
+
+    .header{
+        margin-top: 3rem;
+        width: 330rem;
+        display: flex;
+        color: #FFFFFF;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__nav{
+        display: none;
+    }
+
+    .burger-btn{
+        background-color: transparent;
+        border: 0rem;
+        width: 21rem;
+        height: 12rem;
+    }
+
+    .pet-info{
+        display: flex;
+        flex-direction: column;
+        gap: 11rem;
+        width: 313rem;
+        margin-top: 19rem;
+    }
+    .pet-info__image{
+        display: flex;
+        flex-direction: column;
+        gap: 24rem;
+        align-items: center;
+    }
+    .pet-info__dialog{
+        display: flex;
+        width: 74rem;
+        height: 39rem;
+        background-image: url(img/profit-bg.svg);
+        background-size: cover;
+        justify-content: center;
+        margin-left: 266rem;    
+    }
+    .pet-info__dialog-txt{
+        font-family: 'HarreeghPoppedCy';
+        font-size: 14rem;
+        font-weight: 400;
+        color: #FFFFFF;
+        margin: 10rem 0rem 0rem 0rem;
+    }
+    .pet-info__img-pet{
+        width: 206.83rem;
+        height: 192rem;
+    }
+    .pet-info__level {
+        display: flex;
+        flex-direction: column;
+        gap: 11rem;
+    }
+    .pet-info__level-top{
+        display: flex;
+        justify-content: space-between;
+        font-family: 'HarreeghPoppedCy';
+        font-size: 14rem;
+        font-weight: 400;
+        color: #FFFFFF;
+    }
+    .pet-info__level-top p{
+        margin: 0rem;
+    }
+    .pet-info__progress{
+        display: flex;
+        justify-content: space-between;
+    }
+    .pet-info__bar{
+        background-image: url(img/empty-bar.svg);
+        background-size: cover;
+        width: 33rem;
+        height: 19rem;
+    }
+    .pet-info__bar--filled{
+        background-image: url(img/filled-bar.svg);
+    }
+
+    .currency{
+        margin-top: 28rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .currency__balance {
+        display: flex;
+        gap: 9rem;
+        align-items: center;
+        margin-bottom: 14.52rem;
+    }
+    .currency__balance-img{
+        height: 24rem;
+        width: 12rem;
+    }
+    .currency__balance-amount{
+        width: 118rem;
+        height: 32rem;
+        font-family: 'HarreeghPoppedCy';
+        font-size: 14rem;
+        font-weight: 400;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        padding-left: 11rem;
+        background-image: url(img/balance.svg);
+        background-size: cover;
+    }
+
+    /* SRANIE KARTOCHKI */
+    .currency__stats {
+        display: grid;
+        grid-template-columns: repeat(3, 73rem);
+        column-gap: 40rem;
+        row-gap: 19rem;
+    }
+    .currency__stat {
+        width: 73rem;
+        height: 115rem;
+        padding: 10rem 19rem;
+        border: 2rem solid #3BCA18;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    .currency__stat p {
+        font-family: 'RussianRail G Pro', sans-serif;
+        font-size: 14rem;
+        color: #FFFFFF;
+        margin: 0;
+    }
+    .currency__value{
+        display: flex;
+        gap: 5rem;
+        align-items: center;
+    }
+    .currency__value-diamond{
+        height: 20rem;
+        width: 10rem;
+    }
+
+    .accessories{
+        background-image: url("img/access-bg-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 386.5rem;
+        margin-top: 17rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 640rem;
+    }
+    .accessories__title{
+        font-family: 'HarreeghPoppedCy';
+        font-size: 20rem;
+        font-weight: 400;
+        color: #FFFFFF;
+        margin: 45rem 0rem 64rem 0rem;
+    }
+    .accessories__container{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 62rem;
+        justify-content: center;
+        max-width: 330rem;
+    }
+    .accessories__item{
+        width: 131rem;
+        height: 184rem;
+        border: 2rem solid #3BCA18;
+        box-shadow: 0rem 20rem 40rem rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(10rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .accessories__item img{
+        width: 109rem;
+        height: 103rem;
+        margin-bottom: 16rem;
+    }
+    .accessories__item-desc {
+        display: flex;
+        justify-content: space-between;
+        width: 123rem;
+        font-family: 'HarreeghPoppedCy';
+        font-weight: 400;
+        font-size: 14rem;
+        color: #FFFFFF;
+        margin-bottom: 6rem;
+    }
+    .accessories__item-cost{
+        display: flex;
+        align-items: center;
+        gap: 6rem;
+    }
+    .accessories__item p {
+        margin: 0;
+    }
+    .accessories__item-cost img{
+        width: 8rem;
+        height: auto;
+        margin: 0;
+    }
+    .accessories__button{
+        font-family: 'RussianRail G Pro';
+        color: #FFFFFF;
+        font-size: 14rem;
+        font-weight: 400;
+        padding: 11.5rem 34rem;
+        background-color: transparent;
+        border: 0rem;
+        border-top: 2rem dashed #3BCA18;
+        transition: 0.5s ease;
+    }
+    .accessories__button:hover{
+        background-color: #3cca182c;
+    }
 
 }

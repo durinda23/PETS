@@ -606,17 +606,19 @@ body {
     }
 
     .catalog__slide{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
         align-items: center;
-        gap: 32rem;
+        grid-template-rows: auto auto;
+        column-gap: 32rem;
+        row-gap: 35rem;
         width: 100%;
     }
     
     .catalog__slider{
         position: relative;
-        width: 330rem;
+        
+        width: 100vw;
         overflow: hidden;
         display: flex;
         align-items: center;
@@ -625,6 +627,7 @@ body {
     }
 
     .catalog__info{
+        order: 2;
         height: 155rem;
         width: 147.05rem;
         border-top: 2rem solid #3BCA18;
@@ -646,6 +649,9 @@ body {
     }
     
     .catalog__pet{
+        grid-column: 1 / -1;
+        justify-self: center;
+        order: 1;
         width: 173.7rem;
         height: 193rem;
         border: 2rem solid #3BCA18;
@@ -656,6 +662,7 @@ body {
         font-family: 'HarreeghPoppedCy';
         font-size: 14rem;
         color: #FFFFFF;
+        /* margin: 0 0rem; */
         flex: 0 0 auto;
     }
     .catalog__name{
@@ -679,6 +686,7 @@ body {
     }
 
     .catalog__stats{
+        order: 3;
         width: 147.05rem;
         height: 155rem;
         border-top: 2rem dashed #3BCA18;
@@ -700,7 +708,7 @@ body {
 
     .catalog__arrow{
         position: absolute;
-        top: 50%;
+        top: 25%;
         transform: translateY(-50%);
         background-color: transparent;
         border: 0;
