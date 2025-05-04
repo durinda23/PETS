@@ -81,6 +81,12 @@ body {
     .header__nav{
         display: flex;
         gap: 100rem;
+        align-items: center;
+    }
+
+    .login__img {
+        height: 49rem;
+        width: 49rem;
     }
 
     .burger-btn {
@@ -198,7 +204,7 @@ body {
     .currency__stats {
         display: grid;
         grid-template-columns: repeat(3, 150rem); 
-        gap: 55px;
+        gap: 55rem;
         justify-content: center;
     }
     .currency__stat {

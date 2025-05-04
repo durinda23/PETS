@@ -90,6 +90,12 @@ body {
     .header__nav{
         display: flex;
         gap: 100rem;
+        align-items: center;
+    }
+
+    .login__img {
+        height: 49rem;
+        width: 49rem;
     }
 
     .header__link{
